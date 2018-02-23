@@ -24,7 +24,7 @@ body {
 
 @font-face {
     font-family: 'HelveticaNeueUltraLight';
-    src: url("/fonts/helveticaneue-ultralight-webfont.woff") format("woff");
+    src: url("https://dt-rush.github.com/lilys_clock/fonts/helveticaneue-ultralight-webfont.woff") format("woff");
 }
 
 #clock {
