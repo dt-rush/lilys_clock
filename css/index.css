@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black),color-stop(1, #012614));
+    background-attachment: fixed;
+}
+
+#progress-circle {
+    position: fixed;
+    bottom: 4em;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#progress-circle svg circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: white;
+    stroke-width: 2px;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    src: url("/fonts/helveticaneue-ultralight-webfont.woff") format("woff");
+}
+
+#clock {
+    margin-top: 1em;
+    height: 10em;
+    line-height: 10em;
+}
+
+.time {
+    color: white;
+    font-family: 'HelveticaNeueUltraLight', sans-serif;
+    text-align: center;
+}
+
+#clock .time {
+    font-size: 5em;
+}
+
+#divisions .time {
+    font-size: 3em;
+}
+
+#footer {
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+    color: #ba820f;
+}
+
+#footer #heart {
+    font-size: 3em;
+}
