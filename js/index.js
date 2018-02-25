@@ -65,7 +65,16 @@ var app = {
                 n /= 2;
             }
         };
+        var updateMessage = function () {
+            messageElem = document.getElementById ('message');
+            if h == 11 && m == 11 {
+                messageElem.innerHTML = 'make a wish';
+            } else {
+                messageElem.innerHTML = '';
+            }
+        };
         updateMainTime();
         updateDivisions();
+        updateMessage();
     }
 };

@@ -47,6 +47,10 @@ body {
     font-size: 3em;
 }
 
+#message {
+    color: grey;
+}
+
 #footer {
     position: fixed;
     bottom: 1em;
