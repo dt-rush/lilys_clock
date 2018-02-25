@@ -3,6 +3,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
+    color: white;
+    font-family: 'HelveticaNeueUltraLight', sans-serif;
     /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black),color-stop(1, #012614)); */
     background-attachment: fixed;
 }
@@ -24,36 +26,61 @@ body {
 
 @font-face {
     font-family: 'HelveticaNeueUltraLight';
-    src: url("https://dt-rush.github.io/lilys_clock/fonts/helveticaneue-ultralight-webfont.woff") format("woff");
-}
-
-#clock {
-    margin-top: 1em;
-    height: 10em;
-    line-height: 10em;
-}
-
-.time {
-    color: white;
-    font-family: 'HelveticaNeueUltraLight', sans-serif;
-    text-align: center;
-}
-
-#clock .time {
-    font-size: 5em;
-}
-
-#divisions .time {
-    font-size: 3em;
+    src: url("../fonts/helveticaneue-ultralight-webfont.woff") format("woff");
 }
 
 #message {
-    color: grey;
+    color: lightgrey;
     position: fixed;
     top: 1em;
     width: 100%;
     text-align: center;
     font-style: italic;
+    font-size: 1.4em;
+}
+
+#clock {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 5em;
+    line-height: 5em;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    text-align: center;
+}
+
+#clock .left {
+    display: inline-block;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+#clock .center {
+    display: inline-block;
+}
+
+#clock .center #time {
+    font-size: 5em;
+}
+
+#clock .right {
+    display: inline-block;
+    -webkit-flex: 1;
+    flex: 1;
+    align-self: flex-end;
+}
+
+#clock .right #ampm {
+    font-size: 1.4em;
+    float: left;
+}
+
+#divisions {
+    text-align: center;
+}
+
+#divisions .number {
+    font-size: 3em;
 }
 
 #footer {

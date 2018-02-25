@@ -49,12 +49,14 @@ var app = {
     },
 
     updateDisplay: function (h, m) {
+        // h is in 0 - 23 format. convert to 0 - 12
+        if (h > 12) { h -= 12 }
+
         var updateMainTime = function () {
             timeStr = ("0" + h).slice (-2) +
                 ":" +
                 ("0" + m).slice(-2);
-            timeElem = document.getElementById ('clock')
-                .querySelector ('.time');
+            timeElem = document.getElementById ('time');
             timeElem.innerHTML = timeStr;
         };
         var updateDivisions = function () {
