@@ -67,7 +67,7 @@ var app = {
         };
         var updateMessage = function () {
             messageElem = document.getElementById ('message');
-            if h == 11 && m == 11 {
+            if (h == 11 && m == 11) {
                 messageElem.innerHTML = 'make a wish';
             } else {
                 messageElem.innerHTML = '';
